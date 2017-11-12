@@ -10,8 +10,10 @@ import java.io.IOException;
 public class Alo {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		Path p = Paths.get("C:\\Users\\utaka\\eclipse-workspace\\javatest\\text_files\\test.txt");
+//		Path p = Paths.get("text_files");
+//		System.out.format("> %s%n", p.toAbsolutePath());
+	
+		Path p = Paths.get("text_files\\test.txt");
 		System.out.format(";->  %s%n", p.toString());
 		
 		Charset charset = Charset.forName("UTF-8");
