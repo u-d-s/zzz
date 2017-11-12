@@ -10,8 +10,8 @@ import java.io.IOException;
 public class Alo {
 
 	public static void main(String[] args) {
-//		Path p = Paths.get("text_files");
-//		System.out.format("> %s%n", p.toAbsolutePath());
+		Path tmp = Paths.get(".");
+		System.out.format("> %s%n", tmp.toAbsolutePath());
 	
 		Path p = Paths.get("text_files\\test.txt");
 		System.out.format(";->  %s%n", p.toString());
