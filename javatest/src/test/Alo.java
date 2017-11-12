@@ -11,7 +11,7 @@ public class Alo {
 
 	public static void main(String[] args) {
 		Path tmp = Paths.get(".");
-		System.out.format("> %s%n", tmp.toAbsolutePath());
+		System.out.format(">>> %s%n", tmp.toAbsolutePath());
 	
 		Path p = Paths.get("text_files\\test.txt");
 		System.out.format(";->  %s%n", p.toString());
