@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <start-class>uds.birdmanbros.test.App</start-class>
+    <java.version>1.8</java.version>
   </properties>
 
   <dependencies>
@@ -45,10 +47,10 @@
 		<configuration>
 			<archive>
 				<manifest>
-					<mainClass>uds.birdmanbros.test.mvntest.App</mainClass>
+					<mainClass>uds.birdmanbros.test.App</mainClass>
 					<addClasspath>true</addClasspath>
 					<addExtensions>true</addExtensions>
-					<packageName>uds.birdmanbros.test.mvntest</packageName>
+					<packageName>uds.birdmanbros.test</packageName>
 				</manifest>
 			</archive>
 		</configuration>
