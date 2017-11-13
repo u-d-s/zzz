@@ -13,11 +13,11 @@ public class App
     	System.out.format("alo%n");
     	RedisClient redisClient = RedisClient.create("redis://localhost:6379");
     	StatefulRedisConnection<String, String> connection = redisClient.connect();
-//    	RedisCommands<String, String> syncCommands = connection.sync();
-//
-//    	syncCommands.set("key", "Hello, Redis!");
+    	RedisCommands<String, String> syncCommands = connection.sync();
 
-    	connection.close();
+    	syncCommands.set("lettuce2", "Hello, Redis!");
+
+   	connection.close();
     	redisClient.shutdown();
 
     }
